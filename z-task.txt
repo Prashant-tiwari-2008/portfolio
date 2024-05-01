@@ -1,0 +1,11 @@
+dependencis
+1. routing
+2. icon
+3. experience icon
+4. smooth scroll
+5. experience page overlaping
+
+
+Need to study
+1. different bunler and difference
+2. what is parcel

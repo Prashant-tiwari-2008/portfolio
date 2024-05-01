@@ -1,0 +1,9 @@
+.exercise-list::before{
+    position: absolute;
+    content: "";
+    top: 64px;
+    bottom: 30px;
+    left: 32px;
+    width: 1px;
+    background-color: #f2f3ff;
+}

@@ -1,0 +1,14 @@
+.form::before {
+    position: absolute;
+    content: "";
+    top: 0px;
+    bottom: 0px;
+    width: 1px;
+    background-color: rgb(14, 159, 110);
+}   
+@media only screen and (max-width: 768px) {
+    .form::before {
+        position: static;
+    }
+  }
+/* /todo : need to fix this */

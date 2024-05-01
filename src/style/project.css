@@ -1,0 +1,8 @@
+.feature-heading:nth-child(even){
+    text-align: start;
+
+}
+
+.feature-heading:nth-child(odd){
+    text-align: end;
+}
