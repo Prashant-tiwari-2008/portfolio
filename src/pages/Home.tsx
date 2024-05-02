@@ -1,11 +1,10 @@
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
-import { collection, getDocs, doc, setDoc } from 'firebase/firestore';
+import { collection, getDocs, } from 'firebase/firestore';
 import { db } from '../firebase/configuration';
 import { useEffect } from 'react';
 
 
 const Home = () => {
-  let userDetail = [];
   const getData = async () => {
     try {
       const querySnapshot = await getDocs(collection(db, "testing"));
