@@ -1,9 +1,26 @@
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
-// import { FiTwitter } from 'react-icons/fi';
+import { collection, getDocs, doc, setDoc } from 'firebase/firestore';
+import { db } from '../firebase/configuration';
+import { useEffect } from 'react';
 
 
 const Home = () => {
-  
+  let userDetail = [];
+  const getData = async () => {
+    try {
+      const querySnapshot = await getDocs(collection(db, "testing"));
+      const data = querySnapshot.docs.map(doc => doc.data());
+      console.log("data",data)
+    } catch (error) {
+      console.log("error", error)
+    }
+  }
+
+
+  useEffect(() => {
+    getData();
+  }, [])
+
   return (
     <div id="home" className='px-10 lg:px-64 py-28 lg:py-16   text-start flex lg:flex-row flex-col-reverse justify-between items-center '>
       <div className="w-full h-full lg:py-40 flex flex-col justify-normal lg:items-start items-center text-white">

@@ -6,6 +6,13 @@ dependencis
 5. experience page overlaping
 
 
+lazy load component
+const Home = React.lazy(() => import("../pages/Home"));
+const About = React.lazy(() => import("../pages/About"));
+
+
 Need to study
 1. different bunler and difference
 2. what is parcel
+
+
